@@ -7,7 +7,7 @@ class AuthorOrReadOnly(permissions.BasePermission):
         return (
                 request.method in permissions.SAFE_METHODS
                 or request.user.is_authenticated
-            )
+        )
 
 
 class ReadOnly(permissions.BasePermission):
